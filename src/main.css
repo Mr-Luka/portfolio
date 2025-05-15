@@ -220,7 +220,7 @@ hr {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
 }
 
 .about {
@@ -282,7 +282,7 @@ hr {
     margin-bottom: 1rem;
     border-radius: 50% 20% / 10% 40%;
     padding: 1rem;
-    box-shadow: 5px 5px 15px rgba(40, 223, 248, 0.949);
+    box-shadow: 5px 5px 15px rgba(232, 251, 253, 0.949);
     border: 10px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -290,12 +290,13 @@ hr {
     animation: tilt 0.5s ease-in-out forwards;
     cursor: pointer;
     transform: scale(1.1);
-    box-shadow: 5px 5px 15px rgba(232, 251, 253, 0.949);
+    box-shadow: 5px 5px 15px rgba(40, 223, 248, 0.949);
 }
 
 .project p {
     margin: 1rem 0;
-    width: 90%;
+    width: 80%;
+    margin-left: 2rem;
 }
 
 .project h6{
@@ -321,7 +322,7 @@ hr {
 }
 
 .built-with img {
-    width: 25%;
+    width: 20%;
     border: none;
     box-shadow: none;
 }
