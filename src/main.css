@@ -118,7 +118,7 @@ body {
 
 .home-content h1 {
     position: relative;
-    font-size: 56px;
+    font-size: 3.5rem;
     font-weight: 700;
     line-height: 1.2;
     color: #0084b9;
@@ -129,7 +129,7 @@ body {
 
 .home-content h3 {
     position: relative;
-    font-size: 32px;
+    font-size: 2.3rem;
     font-weight: 700;
     color: rgb(5, 9, 0);
     animation: showUp 2000ms ease-in-out forwards;
@@ -138,9 +138,9 @@ body {
 
 .home-content p {
     position: relative;
-    font-size: 16px;
+    font-size: 1.1rem;
     margin: 20px 0 40px;
-    color: #0084b9;
+    color: #025f84;
     animation: showUp 2000ms ease-in-out forwards;
 }
 
@@ -223,12 +223,9 @@ hr {
     width: 100vw;
 }
 
-
-
-
 .about {
     margin-top: -10rem;
-    padding: 1rem;
+    padding: 1.5rem;
     backdrop-filter: blur(20px);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.517);
     width: 80%;
@@ -249,6 +246,85 @@ hr {
     line-height: 1.5rem;
 }
 
+.portfolio-section{
+    backdrop-filter: blur(20px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.517);
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem 0;
+    border-radius: 15px;
+    margin-bottom: 4rem;
+}
+
+.portfolio-section p{
+    width: 30%;
+    color: black;
+}
+
+.portfolio-section img{
+    width: 90%;
+    background-size: cover;
+    background-position: center;
+}
+
+.project {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    width: 45%;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    border-radius: 50% 20% / 10% 40%;
+    padding: 1rem;
+    box-shadow: 5px 5px 15px rgba(40, 223, 248, 0.949);
+    border: 10px solid rgba(255, 255, 255, 0.5);
+}
+
+.project:hover {
+    animation: tilt 0.5s ease-in-out forwards;
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(232, 251, 253, 0.949);
+}
+
+.project p {
+    margin: 1rem 0;
+    width: 90%;
+}
+
+.project h6{
+    font-size: 1.3rem;
+    color: black
+}
+
+.project img {
+    margin-top: 1rem;
+    border: 1px solid white;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.949);
+}
+
+.built-with {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    margin-bottom: 1rem;
+}
+
+.built-with img {
+    width: 25%;
+    border: none;
+    box-shadow: none;
+}
 .contact-me{
     width: 100%;
     color: black;
@@ -306,4 +382,17 @@ hr {
   to {
     transform: rotateY(0deg); /* Flip to the front */
   }
+}
+
+
+@keyframes tilt {
+    0% {
+        transform: rotate(0deg); 
+    }
+    50% {
+        transform: rotate(5deg); 
+    }
+    100% {
+        transform: rotate(0deg); 
+    }
 }
