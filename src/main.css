@@ -28,14 +28,57 @@ body {
     color: #ededed;
     text-decoration: none;
     font-weight: 600;
+    margin-left: 0;
+    
+}
+
+#name-and-linkedin{
+    position: relative;
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+
+#name-and-linkedin::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.logo-image{
+    width: 10%;
+    margin-right: 0;
+}
+
+.logo-image:hover {
+    transform: scale(1.2)
 }
 
 .navbar a {
+    position: relative;
     font-size: 18px;
     color: #ededed;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
 }
 
 .navbar a:hover,
@@ -55,27 +98,80 @@ body {
 }
 
 .home-content h1 {
+    position: relative;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
 }
 
+.home-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
 .home-content h3 {
+    position: relative;
     font-size: 32px;
     font-weight: 700;
     color: #00abf0;
 }
 
+.home-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.3s;
+}
+
 .home-content p {
+    position: relative;
     font-size: 16px;
     margin: 20px 0 40px;
 }
 
+.home-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+}
+
 .home-content .btn-box {
+    position: relative;
     display: flex;
     justify-content: space-between;
     width: 345px;
     height: 50px;
+}
+
+.home-content .btn-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.9s;
+    z-index: 2;
 }
 
 .btn-box a {
@@ -128,4 +224,11 @@ body {
 
 .btn-box a:hover::before {
     width: 100%;
+}
+
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
 }
