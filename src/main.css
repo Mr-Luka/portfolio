@@ -8,18 +8,27 @@
 body {
     background: #081b29;
     color: #ededed;
-    width: 768px;
+    width: 100%;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
 }
 
 .home video {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
   object-fit: cover; 
-  filter: blur(1px);
 }
 
 .header {
@@ -104,6 +113,7 @@ body {
     perspective: 1000px;
     transform-style: preserve-3d;
     animation: flipCard 2s ease-in-out forwards;
+    margin: 0 auto;
 }
 
 .home-content h1 {
@@ -205,14 +215,69 @@ hr {
     top: 90%;
 }
 
+.sections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+
+
+
 .about {
-    text-align: center;
+    margin-top: -10rem;
     padding: 1rem;
-    background-color: #ededed71;
-    width: 70%;
-    position: absolute;
-    border-radius: 15px;;
-    left: 15%;
+    backdrop-filter: blur(20px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.517);
+    width: 80%;
+    border-radius: 15px;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.about h4{
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.contact-me{
+    width: 100%;
+    color: black;
+    padding: 2rem 2rem 1rem 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    box-shadow: 5px 5px 15px rgba(1, 120, 136, 0.949);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: fit-content
+}
+
+.contact-me img{
+    width: 10%;
+    margin-right: 1rem;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.contact:hover {
+    transform: scale(1.1)
 }
 
 
