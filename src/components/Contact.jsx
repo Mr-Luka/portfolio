@@ -11,7 +11,7 @@ export default function Contact(){
             </div>
             <div className='contact'>
                 <img src={email} alt='email' />
-                <p>luka.luka.luka@gmail.com</p>
+                <p>luka.luka.luka93@gmail.com</p>
             </div>
         </div>
     )
