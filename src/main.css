@@ -248,6 +248,42 @@ hr {
     line-height: 1.5rem;
 }
 
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+}
+
+.skills .skills-p {
+    font-size: 1.5rem;
+}
+
+.skills ol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.skills ol li {
+    background-color: #00abf0;
+    font-size: 1.1rem;
+    padding: 1rem;
+    border-radius: 15px;
+    margin: 0.8rem 0.8rem;
+    border: 2px solid white;
+    color: white;
+}
+
+.skills ol li:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 167, 142, 0.517);
+}
+
 .portfolio-section{
     backdrop-filter: blur(20px);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.517);

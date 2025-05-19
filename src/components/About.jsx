@@ -3,8 +3,9 @@ export default function About(){
     return (
         <>
             <div className='about'>
-                <h4>About me:</h4>
-                <p>Hi, I’m Luka Pavlovski — a front-end developer who loves solving problems, building interactive web apps, and constantly learning new skills. I’ve completed courses from Skillcrush, Udemy, Wes Bos, and Traversy Media, and combined them with hands-on experience through self-taught projects.
+                <div className='about-me'>
+                    <h4>About me:</h4>
+                    <p>Hi, I’m Luka Pavlovski — a front-end developer who loves solving problems, building interactive web apps, and constantly learning new skills. I’ve completed courses from Skillcrush, Udemy, Wes Bos, and Traversy Media, and combined them with hands-on experience through self-taught projects.
                     <br/>
                     <br/>
                     I’ve built a range of projects including a construction company website, a space travel agency app, a movie browser, and fun games like tic-tac-toe and “Stop the Timer.” I'm passionate about creating clean, responsive, and engaging user experiences using JavaScript and React.
@@ -17,8 +18,35 @@ export default function About(){
                     <br/>
                     <br/>
                     I’m currently looking for a front-end developer role where I can contribute, grow, and build meaningful digital experiences. Let’s connect!
-                </p>
+                    <br/>
+                    </p>
+                <div className='skills'>
+                    <p className='skills-p'>Skills:</p>
+                    <ol>
+                        <li>CSS3</li>
+                        <li>HTML5</li>
+                        <li>Git and the command line</li>
+                        <li>GitHub</li>
+                        <li>Version Control</li>
+                        <li>FlexBox</li>
+                        <li>Media Queries</li>
+                        <li>Responsive Typography</li>
+                        <li>APIS</li>
+                        <li>Manupilate the DOM</li>
+                        <li>Vanila JavaScript</li>
+                        <li>ES6</li>
+                        <li>JSX</li>
+                        <li>Managing Data Flow</li>
+                    </ol>
+                    <p>
+                    Tools:
+                    <br/>
+                    Chrome DevTools, Text editors, GIt, GitHub, Photoshop, CodeSandbox.
+                    </p>
+                </div>
+                </div>
             </div>
         </>
     )
 }
+                    
