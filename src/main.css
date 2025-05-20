@@ -316,7 +316,7 @@ hr {
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(10px);
-    width: 45%;
+    width: 90%;
     border-radius: 15px;
     margin-bottom: 1rem;
     border-radius: 50% 20% / 10% 40%;
@@ -358,8 +358,9 @@ hr {
 .project img {
     margin-top: 1rem;
     border: 2px solid white;
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
+    margin-left: 1rem;
 }
 
 .built-with {
@@ -385,8 +386,8 @@ hr {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:flex-start;
-    margin-left: 3rem;
+    justify-content: center;
+    margin-right: 8rem;
 }
 
 .tools img {
@@ -471,4 +472,17 @@ hr {
     100% {
         transform: rotate(0deg); 
     }
+}
+
+@media (min-width:990px) {
+  body {
+    max-width: none;
+    width: 100%;
+  }
+
+  .project{
+    width: 45%;
+  }
+
+
 }
