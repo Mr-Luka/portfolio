@@ -1,19 +1,37 @@
-import linkedinLogo from '..//../public/linkedin.png';
+import linkedinLogo from '../../public/linkedin.png';
 
-export default function NavBar(){
+export default function NavBar() {
 
-    return (
-        <header className="header">
-            <div id="name-and-linkedin">
-                <a href="#" className="logo">Luka.</a>
-                <a href="#"><img className="logo-image" src={linkedinLogo} alt='linkedin logo'/></a>
-            </div>
-            <nav className="navbar">
-                <a href="#" className="active">Home</a>
-                <a href="#">About</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Contact</a>
-            </nav>
-        </header>
-    )
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <header className="header">
+      <div id="name-and-linkedin">
+        {/* Click Luka. to refresh page */}
+        <a href="#" className="logo" onClick={() => window.location.reload()}>
+          Luka.
+        </a>
+
+        {/* LinkedIn logo to open profile */}
+        <a
+          href="https://www.linkedin.com/in/luka-pavlovski-02738a263/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img className="logo-image" src={linkedinLogo} alt="LinkedIn logo" />
+        </a>
+      </div>
+
+      <nav className="navbar">
+        <a href="#" onClick={() => scrollToSection('about-section')}>About</a>
+        <a href="#" onClick={() => scrollToSection('portfolio-section')}>Portfolio</a>
+        <a href="#" onClick={() => scrollToSection('contact-section')}>Contact</a>
+      </nav>
+    </header>
+  );
 }

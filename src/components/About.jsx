@@ -2,7 +2,7 @@ export default function About(){
 
     return (
         <>
-            <div className='about'>
+            <div className='about' id="about-section">
                 <div className='about-me'>
                     <h4>About me:</h4>
                     <p>Hi, I’m Luka Pavlovski — a front-end developer who loves solving problems, building interactive web apps, and constantly learning new skills. I’ve completed courses from Skillcrush, Udemy, Wes Bos, and Traversy Media, and combined them with hands-on experience through self-taught projects.
