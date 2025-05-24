@@ -232,7 +232,7 @@ hr {
 }
 
 .about {
-    margin-top: -10rem;
+    margin-top: -5rem;
     padding: 1.5rem;
     backdrop-filter: blur(20px);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.517);
@@ -543,12 +543,16 @@ hr {
         margin-right: 0;
     }
 
+    .home-content {
+        max-width: 80%;
+    }
+
     .home-content .btn-box{
         width: 70%;
     }
 
     .btn-box a:nth-child(2){
-        margin-left: 0rem;
+        margin-left: 1rem;
     }
 
     .contact-me{
@@ -568,6 +572,18 @@ hr {
     .logo-image{
         width: 10%;
         margin-right: 0;
+    }
+
+    .home-content {
+        max-width: 65%;
+    }
+
+    .home-content .btn-box{
+        width: 50%;
+    }
+
+    .btn-box{
+        width: 20%;
     }
 
     .home-content{

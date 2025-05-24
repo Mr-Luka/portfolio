@@ -41,7 +41,7 @@ export default function About(){
                     <p>
                     Tools:
                     <br/>
-                    Chrome DevTools, Text editors, GIt, GitHub, Photoshop, CodeSandbox.
+                    Chrome DevTools, Text editors, GIt, GitHub, Photoshop, Adobe Illustrator CodeSandbox.
                     </p>
                 </div>
                 </div>
