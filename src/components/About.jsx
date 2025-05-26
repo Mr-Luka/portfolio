@@ -5,7 +5,7 @@ export default function About(){
             <div className='about' id="about-section">
                 <div className='about-me'>
                     <h4>About me:</h4>
-                    <p>Hi, I’m Luka Pavlovski — a front-end developer who loves solving problems, building interactive web apps, and constantly learning new skills. I’ve completed courses from Skillcrush, Udemy, Wes Bos, and Traversy Media, and combined them with hands-on experience through self-taught projects.
+                    <p>Hi, I’m Luka Pavlovski — a frontend developer who loves solving problems, building interactive web apps, and constantly learning new skills. I’ve completed courses from Skillcrush, Udemy, Wes Bos, and Traversy Media, and combined them with hands-on experience through self-taught projects.
                     <br/>
                     <br/>
                     I’ve built a range of projects including a construction company website, a space travel agency app, a movie browser, and fun games like tic-tac-toe and “Stop the Timer.” I'm passionate about creating clean, responsive, and engaging user experiences using JavaScript and React.
@@ -41,7 +41,7 @@ export default function About(){
                     <p>
                     Tools:
                     <br/>
-                    Chrome DevTools, Text editors, GIt, GitHub, Photoshop, Adobe Illustrator CodeSandbox.
+                    Chrome DevTools, Text editors, Git, GitHub, Photoshop, Adobe Illustrator CodeSandbox.
                     </p>
                 </div>
                 </div>

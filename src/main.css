@@ -304,10 +304,6 @@ hr {
     margin-bottom: 4rem;
 }
 
-.portfolio-section p{
-    width: 30%;
-    color: black;
-}
 
 .portfolio-section img{
     width: 90%;
@@ -317,6 +313,7 @@ hr {
 
 
 .project {
+    color: black;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -339,12 +336,16 @@ hr {
     box-shadow: 5px 5px 15px rgba(40, 223, 248, 0.949);
 }
 
-.project p {
+.project-description {
     margin: 1rem 0;
-    width: 80%;
+    width: 90%;
     background-color: rgba(240, 248, 255, 0.598);
     padding: 1rem;
     border-radius: 15px;
+}
+
+p .project-description  {
+    width: 90%;
 }
 
 .project h3{
@@ -375,32 +376,56 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 1rem;
+}
+
+.built-with > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.207);
+    box-shadow: 5px 5px 15px rgba(5, 164, 182, 0.949);
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 15px;
 }
 
 .built-with img {
-    width: 13%;
+    width: 35%;
     border: none;
     margin-left: 1rem;
     margin-bottom: 1rem;
 }
 
 
-
+.tools > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.207);
+    box-shadow: 5px 5px 15px rgba(5, 164, 182, 0.949);
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
 
 .tools {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-right: 5rem;
+    width: 80%;
 }
 
 .tools img {
-    width: 15%;
+    width:25%;
     border: none;
-    margin-left: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -432,7 +457,8 @@ hr {
 }
 
 .contact:hover {
-    transform: scale(1.1)
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .contact p {
