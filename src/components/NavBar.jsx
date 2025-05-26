@@ -1,7 +1,7 @@
 import linkedinLogo from '../../public/linkedin.png';
+import githubIcon from '../assets/github.png';
 
 export default function NavBar() {
-
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -12,8 +12,8 @@ export default function NavBar() {
   return (
     <header className="header">
       <div id="name-and-linkedin">
-        {/* Click Luka. to refresh page */}
-        <a href="#" className="logo" onClick={() => window.location.reload()}>
+        {/* Click Luka. to scroll to top */}
+        <a href="#" className="logo" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>
           Luka.
         </a>
 
@@ -28,9 +28,9 @@ export default function NavBar() {
       </div>
 
       <nav className="navbar">
-        <a href="#" onClick={() => scrollToSection('about-section')}>About</a>
-        <a href="#" onClick={() => scrollToSection('portfolio-section')}>Portfolio</a>
-        <a href="#" onClick={() => scrollToSection('contact-section')}>Contact</a>
+        <a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('about-section'); }}>About</a>
+        <a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('portfolio-section'); }}>Portfolio</a>
+        <a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('contact-section'); }}>Contact</a>
       </nav>
     </header>
   );
