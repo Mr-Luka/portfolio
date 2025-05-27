@@ -4,16 +4,16 @@ export default function SkillsAndTools({skill1, skill1Name, skill2, skill2Name, 
         <>
             <div className='built-with'>
                 <h3>Skills:</h3>
-                <div>
-                    <div>
+                <div className='skills-built'>
+                    <div className='skills-built-div'>
                         <img src={skill1}/>
                         <p>{skill1Name}</p>
                     </div>
-                    <div>
+                    <div className='skills-built-div'>
                         <img src={skill2}/>
                         <p>{skill2Name}</p>
                     </div>
-                    <div>
+                    <div className='skills-built-div'> 
                         <img src={skill3}/>
                         <p>{skill3Name}</p>
                     </div>
@@ -22,7 +22,7 @@ export default function SkillsAndTools({skill1, skill1Name, skill2, skill2Name, 
             <div className='tools'>
                 <h3>Tools:</h3>
                 <div>
-                    <div>
+                    <div className='tools-built'>
                         <img src={tool1} alt='photoshop icon'/>
                         <p>Photoshop</p>
                     </div>

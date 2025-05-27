@@ -5,6 +5,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -111,6 +118,7 @@ body {
     max-width: 90%;
     padding: 2rem;
     backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.46);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.517);
     border-radius: 15px;
     margin-left: 2rem;
@@ -144,7 +152,7 @@ body {
     position: relative;
     font-size: 1.1rem;
     margin: 20px 0 40px;
-    color: #025f84;
+    color: black;
     animation: showUp 2000ms ease-in-out forwards;
 }
 
@@ -241,6 +249,29 @@ hr {
     color: black;
     font-weight: 500;
     margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.46);
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-and-text-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about img {
+    width: 55%;
+    border-radius: 15px;
+    border: 1px solid white;
+    margin-bottom: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.517);
 }
 
 .about h4{
@@ -302,6 +333,7 @@ hr {
     padding: 1rem 0;
     border-radius: 15px;
     margin-bottom: 4rem;
+    background-color: rgba(255, 255, 255, 0.46);
 }
 
 
@@ -325,8 +357,8 @@ hr {
     margin-bottom: 1rem;
     border-radius: 50% 20% / 10% 40%;
     padding: 0.5rem;
-    box-shadow: 5px 5px 15px rgba(232, 251, 253, 0.949);
-    border: 10px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 5px 5px 15px rgba(11, 160, 176, 0.949);
+    border: 10px solid rgba(22, 93, 179, 0.5);
 }
 
 .project:hover {
@@ -386,11 +418,11 @@ p .project-description  {
     justify-content: center;
     flex-direction: row;
     text-align: center;
-    background-color: rgba(240, 248, 255, 0.207);
-    box-shadow: 5px 5px 15px rgba(5, 164, 182, 0.949);
+    /* background-color: rgba(240, 248, 255, 0.207);
+    box-shadow: 5px 5px 15px rgba(5, 164, 182, 0.949); */
     padding: 1rem;
-    margin-top: 0.5rem;
     border-radius: 15px;
+    margin-bottom: 1rem;
 }
 
 .built-with img {
@@ -407,10 +439,9 @@ p .project-description  {
     justify-content: center;
     flex-direction: row;
     text-align: center;
-    background-color: rgba(240, 248, 255, 0.207);
-    box-shadow: 5px 5px 15px rgba(5, 164, 182, 0.949);
+    /* background-color: rgba(240, 248, 255, 0.207);
+    box-shadow: 5px 5px 15px rgba(5, 164, 182, 0.949); */
     padding: 0.5rem;
-    margin-top: 0.5rem;
     border-radius: 15px;
     margin-bottom: 2rem;
 }
@@ -449,6 +480,11 @@ p .project-description  {
     margin-right: 1rem;
 }
 
+.contact-me img:hover {
+    animation: tilt 0.5s ease-in-out forwards;
+    cursor: pointer;
+}
+
 .contact {
     display: flex;
     align-items: center;
@@ -456,10 +492,6 @@ p .project-description  {
     margin-bottom: 1rem;
 }
 
-.contact:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
 
 .contact p {
     font-weight: 600;
@@ -581,6 +613,19 @@ p .project-description  {
         margin-left: 1rem;
     }
 
+    .about p {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    .project h6{
+        font-size: 2rem;
+    }
+
+    p.project-description  {
+        font-size: 1.3rem;
+    }
+
     .contact-me{
         flex-direction: row;
     }
@@ -592,6 +637,7 @@ p .project-description  {
     .contact {
         justify-content: center;
     }
+    
 }
 
 @media (min-width: 1025px) {
@@ -602,6 +648,10 @@ p .project-description  {
 
     .home-content {
         max-width: 65%;
+    }
+
+    .home-content p{
+        font-size: 1.4rem;
     }
 
     .home-content .btn-box{
@@ -624,8 +674,61 @@ p .project-description  {
         font-size: 2.5rem;
     }
 
+    .image-and-text-about{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-between;
+        margin-top: 2rem;
+        background-color: rgba(215, 239, 250, 0.557);
+        box-shadow: 15px 25px 45px rgba(215, 239, 250, 0.557);
+        padding: 2rem;
+        border-radius: 15px;
+    }
+
+
+    .about img{
+        width: 45%;
+        margin-right: 3rem;
+    }
+
     .project{
         width: 45%;
+    }
+
+    .about p {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    .skills {
+        margin-bottom: 3rem;
+    }
+
+    .skills-p{
+        margin-bottom: 1rem;
+    }
+
+    .tools-text{
+        margin: 2rem 0 1.5rem 0;
+    }
+
+    .project h6{
+        font-size: 2rem;
+    }
+
+    p.project-description  {
+        font-size: 1.3rem;
+    }
+
+
+    .skills-built-div img {
+        margin: 0.5rem 0;
+        padding: 0;
+    }
+
+    .skills-built-div p {
+        margin: 0.2rem 0 0 0;
     }
 
     .contact-me{
