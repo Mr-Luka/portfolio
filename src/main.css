@@ -85,7 +85,7 @@ body {
 }
 
 .navbar{
-    margin-left: suto;
+    margin-left: auto;
     display: flex;
     justify-content: flex-end;
     align-items: center;

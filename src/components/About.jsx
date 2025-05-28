@@ -22,7 +22,7 @@ export default function About(){
                             Outside of coding, I’m a proud Digimon fan, a dedicated vegan, and someone who avoids sugar and processed food. I stay active and always strive for growth — in health, tech, and life.
                             <br/>
                             <br/>
-                            I’m currently looking for a front-end developer role where I can contribute, grow, and build meaningful digital experiences. Let’s connect!
+                            I’m currently looking for a frontend developer role where I can contribute, grow, and build meaningful digital experiences. Let’s connect!
                             <br/>
                         </p>
                     </div>
