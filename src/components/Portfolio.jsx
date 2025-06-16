@@ -5,7 +5,8 @@ import project2 from '../assets/projects/construction.png';
 import project3 from '../assets/projects/quiz.png';
 import project4 from '../assets/projects/shopping.png';
 import project5 from '../assets/projects/weather.png';
-import project6 from '../assets/projects/movie.png'
+import project6 from '../assets/projects/movie.png';
+import project7 from '../assets/projects/auto-shop.png';
 
 
 // icons
@@ -78,6 +79,23 @@ export default function (){
                 </a>
                 <h6>Shopping Cart</h6>
                 <p className='project-description'>Choose what clothes you want to purchase, add them to the cart and checkout</p>
+                <SkillsAndTools 
+                    skill1={html} 
+                    skill1Name='HTML' 
+                    skill2={css} 
+                    skill2Name='CSS'
+                    skill3={react}
+                    skill3Name='React'
+                    tool1={photoshop}
+                    tool2={illustrator}
+                />
+            </div>
+            <div className='project'>
+                <a href="https://auto-shop-rayan.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    <img src={project7}/>
+                </a>
+                <h6>Auto Shop</h6>
+                <p className='project-description'>Full-service Land Rover & Jaguar auto shop with a dynamic diagonal intro, interactive sliders, and smooth-scroll navigation for exploring services, team, reviews, and contact.</p>
                 <SkillsAndTools 
                     skill1={html} 
                     skill1Name='HTML' 
