@@ -398,9 +398,9 @@ p .project-description  {
 .project img {
     margin-top: 1rem;
     border: 2px solid white;
-    width: 90%;
+    width: 85%;
     border-radius: 10px;
-    margin-left: 1rem;
+    margin-left: 3rem;
 }
 
 .built-with {
