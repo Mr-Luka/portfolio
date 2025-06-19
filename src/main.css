@@ -458,6 +458,14 @@ p .project-description  {
     width:25%;
     border: none;
     margin-bottom: 1rem;
+    margin-left: 0rem;
+}
+
+.tools-built{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-me{

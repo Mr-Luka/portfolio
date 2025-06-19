@@ -40,7 +40,7 @@ export default function About(){
                         <li>Responsive Typography</li>
                         <li>APIS</li>
                         <li>Manupilate the DOM</li>
-                        <li>Vanila JavaScript</li>
+                        <li>JavaScript</li>
                         <li>ES6</li>
                         <li>JSX</li>
                         <li>React</li>

@@ -26,7 +26,7 @@ export default function SkillsAndTools({skill1, skill1Name, skill2, skill2Name, 
                         <img src={tool1} alt='photoshop icon'/>
                         <p>Photoshop</p>
                     </div>
-                    <div>
+                    <div className='tools-built'>
                         <img src={tool2} alt='adobe illustrator'/>
                         <p>Illustrator</p>
                     </div>
