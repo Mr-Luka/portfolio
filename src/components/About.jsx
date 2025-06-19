@@ -43,6 +43,7 @@ export default function About(){
                         <li>Vanila JavaScript</li>
                         <li>ES6</li>
                         <li>JSX</li>
+                        <li>React</li>
                         <li>Managing Data Flow</li>
                     </ol>
                     <p className='tools-text'>
