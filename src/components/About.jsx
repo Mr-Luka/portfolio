@@ -22,7 +22,7 @@ export default function About(){
                             Outside of coding, I’m a proud Digimon fan, a dedicated vegan, and someone who avoids sugar and processed food. I stay active and always strive for growth — in health, tech, and life.
                             <br/>
                             <br/>
-                            I’m currently looking for a frontend developer role where I can contribute, grow, and build meaningful digital experiences. Let’s connect!
+                            Whether it's code, design or strategy, I love turning ideas into rea, usable products that make a difference.
                             <br/>
                         </p>
                     </div>
@@ -45,12 +45,13 @@ export default function About(){
                         <li>JSX</li>
                         <li>React</li>
                         <li>Managing Data Flow</li>
+                        <li>WordPress</li>
                     </ol>
                     <p className='tools-text'>
                     Tools:
                     </p>
                     <p>
-                    Chrome DevTools, Text editors, Git, GitHub, Photoshop, Adobe Illustrator, CodeSandbox.
+                    Chrome DevTools, Text editors, Git, GitHub, Photoshop, Adobe Illustrator, CodeSandbox, WordPress.
                     </p>
                 </div>
                 </div>
