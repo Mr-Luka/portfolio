@@ -19,7 +19,6 @@ export default function HomePage() {
           My goal? To create web experiences that resonate — not just function.
         </p>
         <div className="btn-box">
-          <a href="#" onClick={openModal}>Hire me</a>
           <a href="#" onClick={openModal}>Let's Talk</a>
         </div>
       </div>
