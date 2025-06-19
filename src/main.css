@@ -361,11 +361,18 @@ hr {
     border: 10px solid rgba(22, 93, 179, 0.5);
 }
 
+
 .project:hover {
     animation: tilt 0.5s ease-in-out forwards;
     cursor: pointer;
     transform: scale(1.1);
     box-shadow: 5px 5px 15px rgba(40, 223, 248, 0.949);
+}
+
+.project a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-description {
@@ -400,7 +407,6 @@ p .project-description  {
     border: 2px solid white;
     width: 85%;
     border-radius: 10px;
-    margin-left: 3rem;
 }
 
 .built-with {
